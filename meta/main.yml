@@ -1,0 +1,35 @@
+galaxy_info:
+  author: Evan Briones
+  description: Manage installation and configuration of multiple java environment.
+
+  license: MIT
+  min_ansible_version: 1.9
+
+  #
+  # Below are all platforms currently available. Just uncomment
+  # the ones that apply to your role. If you don't see your
+  # platform on this list, let us know and we'll get it added!
+  #
+  platforms:
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+
+  galaxy_tags:
+    - system
+    - development
+    - platform
+    - java
+    - jdk
+    - jvm
+
+dependencies: []
