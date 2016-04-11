@@ -1,0 +1,13 @@
+---
+- name: register and enable epel repository
+  yum: name=epel-release state=present
+
+- name: install java 8
+  yum: name=java-1.8.0-openjdk-headless state=latest update_cache=true
+
+- name: link the default jdk path
+  file:
+    src: /usr/lib/jvm/jre
+    dest: "{{default_path}}"
+    state: link
+    force: yes

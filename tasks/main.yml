@@ -1,0 +1,8 @@
+---
+- name: include redhat family
+  include: centos.yml
+  when: ansible_os_family == 'RedHat'
+
+- name: include debian family
+  include: debian.yml
+  when: ansible_os_family == 'Debian'
