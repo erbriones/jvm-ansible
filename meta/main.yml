@@ -1,6 +1,6 @@
 galaxy_info:
   author: Evan Briones
-  description: Manage installation and configuration of multiple java environment.
+  description: Installation and configuration of the latest stable jdk.
 
   license: MIT
   min_ansible_version: 1.9
