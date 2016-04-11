@@ -11,5 +11,5 @@
   lineinfile:
     dest: /etc/environment
     state: present
-    regex: "^JAVA_HOME"
+    regexp: "^JAVA_HOME"
     line: "JAVA_HOME={{default_path}}"
