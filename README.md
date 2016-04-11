@@ -16,7 +16,7 @@ Example Playbook
 ```
     - hosts: all
       roles:
-         - { role: erbriones.jvm.ansible default_path: /usr/lib/jvm/jdk-latest
+         - { role: erbriones.jvm.ansible, default_path: /usr/lib/jvm/jdk-latest }
 ```
 
 LICENSE
