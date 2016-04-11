@@ -8,7 +8,7 @@ latest stable release of java.
 
 Role Variables
 --------------
-The default java path can be set using `default_jdk_path`.
+The default java path can be set using `default_path`.
 
 Example Playbook
 ----------------
