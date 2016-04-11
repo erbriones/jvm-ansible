@@ -22,4 +22,4 @@ Example Playbook
 LICENSE
 -------
 
-See LICENSE
+See [LICENSE](https://github.com/erbriones/jvm.ansible/blob/master/LICENSE)
