@@ -7,7 +7,7 @@
 
 - name: link the default jdk path
   file:
-    src: /usr/lib/jvm/jre
+    src: /usr/lib/jvm/jre-1.8.0-openjdk
     dest: "{{default_path}}"
     state: link
     force: yes
