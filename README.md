@@ -1,8 +1,8 @@
 jvm.ansible
 =========
 
-An opinionated installation and configuration of the jdk. The package
-follows the latest stable release of the jdk.
+An opinionated installation and configuration of the jdk. The role follows the
+latest stable release of java.
 
 Role Variables
 --------------
