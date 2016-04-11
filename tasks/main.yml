@@ -6,3 +6,10 @@
 - name: include debian family
   include: debian.yml
   when: ansible_os_family == 'Debian'
+
+- name: set JAVA_HOME as a system wide environment variable
+  lineinfile:
+    dest: /etc/environment
+    state: present
+    regex: "^JAVA_HOME"
+    line: "JAVA_HOME={{default_path}}"
