@@ -8,7 +8,9 @@ latest stable release of java.
 
 Role Variables
 --------------
-The default java path can be set using `default_path`.
+
+The `JAVA_HOME` path can be set using `default_path`. This creates a symbolic
+link to the `default_path` and sets the environment variable.
 
 Use the `headless` flag to toggle between development or headless packages.
 
