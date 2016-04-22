@@ -10,10 +10,10 @@ Role Variables
 --------------
 The default java path can be set using `default_path`.
 
+Use the `headless` flag to toggle between development or headless packages.
+
 Example Playbook
 ----------------
-
-Use the `headless` flag to toggle between development or headless packages.
 
 ```
     - hosts: all
