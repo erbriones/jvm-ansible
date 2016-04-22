@@ -1,17 +1,32 @@
 ---
-- name: register and enable java ppa repository
-  apt_repository: repo=ppa:webupd8team/java state=present update_cache=no
-
-- name: install java 8
+- name: install java 8 (headless)
   apt:
     name: openjdk-8-jre-headless
     state: latest
     update_cache: yes
     install_recommends: false
+  when: headless
 
-- name: link the default jdk path
+- name: install java 8
+  apt:
+    name: openjdk-8-jdk
+    state: latest
+    update_cache: yes
+    install_recommends: false
+  when: not headless
+
+- name: link the default jdk path (64bit)
   file:
     src: /usr/lib/jvm/java-8-openjdk-amd64
     dest: "{{default_path}}"
     state: link
     force: true
+  when: ansible_achitecture == "x86_64"
+
+- name: link the default jdk path (32bit)
+  file:
+    src: /usr/lib/jvm/java-8-openjdk-amd32
+    dest: "{{default_path}}"
+    state: link
+    force: true
+  when: ansible_achitecture != "x86_64"

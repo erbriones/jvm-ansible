@@ -13,10 +13,12 @@ The default java path can be set using `default_path`.
 Example Playbook
 ----------------
 
+Use the `headless` flag to toggle between development or headless packages.
+
 ```
     - hosts: all
       roles:
-         - { role: erbriones.jvm.ansible, default_path: /usr/lib/jvm/jdk-latest }
+         - { role: erbriones.jvm.ansible, default_path: /usr/lib/jvm/jdk-latest, headless: false }
 ```
 
 LICENSE
