@@ -2,5 +2,5 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - role: jvm.ansible
+    - role: jvm-ansible
       headless: false
