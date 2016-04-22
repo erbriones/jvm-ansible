@@ -24,4 +24,4 @@ Example Playbook
 LICENSE
 -------
 
-See [LICENSE](https://github.com/erbriones/jvm.ansible/blob/master/LICENSE)
+MIT License, see the [LICENSE](https://github.com/erbriones/jvm.ansible/blob/master/LICENSE) file.
